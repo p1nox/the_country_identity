@@ -1,8 +1,10 @@
 # TheCountryIdentity
 
-Celebrating the premiere of "The Bourne Legacy" in Venezuela and honoring the first film "The Bourne Identity", I give you __the_country_identity__, a gem for get information from [CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook/) about countries. This is based (now practically the same) on [semantic_crawler](https://github.com/obale/semantic_crawler) appproach.
+Celebrating the premiere of "The Bourne Legacy" in Venezuela and honoring the first film "The Bourne Identity"... 
 
-* Important! Right now the [endpoint of University on Manhein](http://www4.wiwiss.fu-berlin.de/factbook/data/) its down.
+I give you __the_country_identity__, a gem for get information from [CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook/). This is based on [semantic_crawler](https://github.com/obale/semantic_crawler) appproach.
+
+* Important! Right now the [endpoint of University of Mannheim](http://www4.wiwiss.fu-berlin.de/factbook/data/) its down.
 
 ## Installation
 
@@ -26,13 +28,13 @@ Or install it yourself as:
     > country.population_total
     => 28,047,938
 
-    > country.get_factbook_property("lifeexpectancyatbirth_totalpopulation")
+    > country.get_property("lifeexpectancyatbirth_totalpopulation")
     => 74.08
 
 ## Roadmap
 
-* Search for others public endpoints RDF, sparql or even json form like for fetching data.
-* Optimize scrapping of data over RDF or any scheme used.
+* Search for more public RDF, sparql or even json endpoints for fetching data.
+* Optimize data scrapping testing other gem like nokogiri.
 
 ## Contributing
 

@@ -52,22 +52,22 @@ module TheCountryIdentity
 
     # Returns background information about the country
     def background
-        get_factbook_property("background")
+        get_property("background")
     end
 
     # Returns background information about the country
     def population_total
-        get_factbook_property("population_total")
+        get_property("population_total")
     end
 
     # Returns geographiccoordinates latitude 
     def latitude
-        get_factbook_property("geographiccoordinates_latitude")
+        get_property("geographiccoordinates_latitude")
     end
 
     # Returns geographiccoordinates longitude
     def longitude
-        get_factbook_property("geographiccoordinates_longitude")
+        get_property("geographiccoordinates_longitude")
     end
 
     # Returns landboundary
@@ -81,33 +81,33 @@ module TheCountryIdentity
 
     # Returns terrain description (human readable)
     def terrain
-        get_factbook_property("terrain")
+        get_property("terrain")
     end
 
     # Returns the total number of airports in the country
     def airports_total
-        get_factbook_property("airports_total")
+        get_property("airports_total")
     end
 
     # Returns the number of helicopter airports
     def heliports
-        get_factbook_property("heliports")
+        get_property("heliports")
     end
 
     # Returns climate description (human readable)
     def climate
-        get_factbook_property("climate")
+        get_property("climate")
     end
 
     # Returns location description (human readable)
     def location
-        get_factbook_property("location")
+        get_property("location")
     end
 
 
     # Abstract method that allows to fetch factbook properties via
     # xpath
-    def get_factbook_property(property_name, prefix = "/" )
+    def get_property(property_name, prefix = "/" )
         if !@doc.nil?
             @doc.xpath(prefix + "/factbook:" + property_name + "/text()", @@NAMESPACES)
         else
