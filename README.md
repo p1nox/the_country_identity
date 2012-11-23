@@ -1,6 +1,8 @@
 # TheCountryIdentity
 
-TODO: Write a gem description
+Celebrating the premiere of "The Bourne Legacy" in Venezuela and honoring the first film "The Bourne Identity", I give you __the_country_identity__, a gem for get information from [CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook/) about countries. This is based (now practically the same) on [semantic_crawler](https://github.com/obale/semantic_crawler) appproach.
+
+* Important! Right now the [endpoint of University on Manhein](http://www4.wiwiss.fu-berlin.de/factbook/data/) its down.
 
 ## Installation
 
@@ -10,7 +12,7 @@ Add this line to your application's Gemfile:
 
 And then execute:
 
-    $ bundle
+    $ bundle install
 
 Or install it yourself as:
 
@@ -18,7 +20,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    > country = TheCountryIdentity::Of.new("Venezuela")
+    => #<TheCountryIdentity::Of:0x007f083417a4d8 @country_name="Venezuela", @url="http://www4.wiwiss.fu-berlin.de/factbook/data/venezuela">
+
+    > country.population_total
+    => 28,047,938
+
+    > country.get_factbook_property("lifeexpectancyatbirth_totalpopulation")
+    => 74.08
+
+## Roadmap
+
+* Search for others public endpoints RDF, sparql or even json form like for fetching data.
+* Optimize scrapping of data over RDF or any scheme used.
 
 ## Contributing
 
@@ -27,3 +41,9 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Added some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## License
+
+© 2012 by [Raul Pino](https://github.com/p1nox) for [Alphadeville](https://github.com/alphadeville), published under MIT license.
+
+Some portions of this software corresponds to [© 2012 Alex Oberhauser MIT license](https://github.com/obale/semantic_crawler/blob/develop/MIT-LICENSE)
