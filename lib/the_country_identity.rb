@@ -15,22 +15,10 @@ module TheCountryIdentity
         "rdf" => "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     }
 
-    # Country name given as input during the object creation.
     attr_reader :country_name
 
-    # The complete URL of the country. Could be also wrong, 
-    # if the country_name is not valid.
     attr_reader :url
 
-    # Get Country Information from the CIA Factbook. see
-    # http://www4.wiwiss.fu-berlin.de/factbook/
-    #
-    # Example:
-    #   >> austria = SemanticCrawler::Factbook::Country.new("austria")
-    #   >> puts austria.background
-    #
-    # Arguments:
-    #   new_country_name: (String)
     def initialize(new_country_name)
         if !new_country_name.nil?
             @country_name = new_country_name
@@ -105,8 +93,7 @@ module TheCountryIdentity
     end
 
 
-    # Abstract method that allows to fetch factbook properties via
-    # xpath
+    # Abstract method that allows to fetch factbook properties via xpath
     def get_property(property_name, prefix = "/" )
         if !@doc.nil?
             @doc.xpath(prefix + "/factbook:" + property_name + "/text()", @@NAMESPACES)
@@ -120,8 +107,7 @@ module TheCountryIdentity
         @doc.to_s
     end
 
-    # Abstract method that allows to fetch rdfs properties via
-    # xpath
+    # Abstract method that allows to fetch rdfs properties via xpath
     def get_rdfs_property(property_name, prefix = "/")
         if !@doc.nil?
             @doc.xpath(prefix + "/rdfs:" + property_name + "/text()", @@NAMESPACES)
@@ -131,10 +117,11 @@ module TheCountryIdentity
     end
 
     private
-    # Retrieves the RDF stream
-    def fetch_rdf
-        @doc = Nokogiri::XML(open(@url))
-    end
+    
+        # Retrieves the RDF stream
+        def fetch_rdf
+            @doc = Nokogiri::XML(open(@url))
+        end
 
   end
   
