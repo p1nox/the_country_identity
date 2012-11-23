@@ -1,7 +1,9 @@
 require "the_country_identity/version"
 
 module TheCountryIdentity
+
   class Of
+
     # Endpoint of University of Mannheim
     @@URI_PREFIX = "http://www4.wiwiss.fu-berlin.de/factbook/data/"
     # TODO - find other endpoints
@@ -133,5 +135,7 @@ module TheCountryIdentity
     def fetch_rdf
         @doc = Nokogiri::XML(open(@url))
     end
+
   end
+  
 end
