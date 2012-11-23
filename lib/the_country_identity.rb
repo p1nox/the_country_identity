@@ -6,7 +6,7 @@ module TheCountryIdentity
 
     # Endpoint of University of Mannheim
     @@URI_PREFIX = "http://www4.wiwiss.fu-berlin.de/factbook/data/"
-    # TODO - find other endpoints
+    # TODO - find more endpoints
 
     # Predefined RDFS/OWL namespaces used for RDF file parsing
     @@NAMESPACES = {
