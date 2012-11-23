@@ -1,6 +1,7 @@
 # TheCountryIdentity
 
-TODO: Write a gem description
+    Celebrating the premiere of "The Bourne Legacy" in Venezuela and honoring the first film "The Bourne Identity",
+        I give you __the_country_identity__, a gem for get information from CIA World Factbook about. This is based (now practically the same) on [semantic_crawler](https://github.com/obale/semantic_crawler) appproach.
 
 ## Installation
 
@@ -10,7 +11,7 @@ Add this line to your application's Gemfile:
 
 And then execute:
 
-    $ bundle
+    $ bundle install
 
 Or install it yourself as:
 

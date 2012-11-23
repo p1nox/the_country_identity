@@ -15,5 +15,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})  
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }  
   gem.require_paths = ["lib"]
+
+  gem.add_dependency "nokogiri"           # XML Parsing
   
 end
