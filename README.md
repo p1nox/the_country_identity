@@ -2,9 +2,9 @@
 
 Celebrating the premiere of "The Bourne Legacy" in Venezuela and honoring the first film "The Bourne Identity"... 
 
-I give you __the_country_identity__, a gem for get information from [CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook/). This is based on [semantic_crawler](https://github.com/obale/semantic_crawler) appproach.
+I give you __the_country_identity__, a [CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook/) crawler gem. Based on [semantic_crawler](https://github.com/obale/semantic_crawler) approach for now.
 
-* Important! Right now the [endpoint of University of Mannheim](http://www4.wiwiss.fu-berlin.de/factbook/data/) its down.
+* Important! Right now the [endpoint](http://www4.wiwiss.fu-berlin.de/factbook/data/) of [University of Mannheim](http://dws.informatik.uni-mannheim.de/) is down (November 2012). Every result from fetching information of any country it will return `nil`.
 
 ## Installation
 

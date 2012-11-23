@@ -7,8 +7,8 @@ Gem::Specification.new do |gem|
   gem.version       = TheCountryIdentity::VERSION
   gem.authors       = ["Raul Pino"]
   gem.email         = ["ipinoraul@gmail.com"]
-  gem.description   = %q{Fetch data from CIA World Factbook}
-  gem.summary       = %q{CIA World Factbook Scrapper}
+  gem.description   = %q{CIA World Factbook crawler}
+  gem.summary       = %q{Fetch data from CIA World Factbook}
   gem.homepage      = "https://github.com/p1nox/the_country_identity"
 
   gem.files         = `git ls-files`.split($\)
