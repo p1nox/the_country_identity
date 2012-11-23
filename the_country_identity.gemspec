@@ -9,7 +9,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["ipinoraul@gmail.com"]
   gem.description   = %q{Fetch data from CIA World Factbook}
   gem.summary       = %q{CIA World Factbook Scrapper}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/p1nox/the_country_identity"
 
   gem.files         = `git ls-files`.split($\)
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})  
