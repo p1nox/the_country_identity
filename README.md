@@ -1,10 +1,8 @@
 # TheCountryIdentity
 
-Celebrating the premiere of "The Bourne Legacy" in Venezuela and honoring the first film "The Bourne Identity"... 
+[![Build Status](https://travis-ci.org/p1nox/the_country_identity.png?branch=master)](https://travis-ci.org/p1nox/the_country_identity) [![Gem Version](https://badge.fury.io/rb/the_country_identity.png)](http://badge.fury.io/rb/the_country_identity) [![Coverage Status](https://coveralls.io/repos/p1nox/the_country_identity/badge.png)](https://coveralls.io/r/p1nox/the_country_identity)
 
-I give you __the_country_identity__, a [CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook/) crawler gem. Based on [semantic_crawler](https://github.com/obale/semantic_crawler) approach for now.
-
-* Important! Right now the [endpoint](http://www4.wiwiss.fu-berlin.de/factbook/data/) of [University of Mannheim](http://dws.informatik.uni-mannheim.de/) is down (November 2012). Every result from fetching information of any country it will return `nil`.
+Celebrating the premiere of "The Bourne Legacy" and honoring the first film "The Bourne Identity"... I give you __the_country_identity__, a [CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook/) crawler gem. Based on [semantic_crawler](https://github.com/obale/semantic_crawler) approach for now.
 
 ## Installation
 
@@ -33,8 +31,7 @@ Or install it yourself as:
 
 ## Roadmap
 
-* Search for more public RDF, sparql or even json endpoints for fetching data.
-* Optimize data scrapping testing other gem like nokogiri.
+* Look for others public RDF, sparql or even json endpoints for fetching data.
 
 ## Contributing
 
