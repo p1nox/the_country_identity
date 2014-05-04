@@ -2,7 +2,9 @@
 
 [![Build Status](https://travis-ci.org/p1nox/the_country_identity.png?branch=master)](https://travis-ci.org/p1nox/the_country_identity) [![Gem Version](https://badge.fury.io/rb/the_country_identity.png)](http://badge.fury.io/rb/the_country_identity) [![Coverage Status](https://coveralls.io/repos/p1nox/the_country_identity/badge.png)](https://coveralls.io/r/p1nox/the_country_identity)
 
-Celebrating the premiere of "The Bourne Legacy" and honoring the first film "The Bourne Identity"... I give you __the_country_identity__, a [CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook/) crawler gem. Based on [semantic_crawler](https://github.com/obale/semantic_crawler) approach for now.
+Honoring the film "The Bourne Identity", I give you __the_country_identity__, a [CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook/) crawler gem. Based on [semantic_crawler](https://github.com/obale/semantic_crawler).
+
+The source of information for this gem is the [D2R Server for the CIA Factbook](http://wifo5-03.informatik.uni-mannheim.de/factbook/), hosted by the [Research Group Data and Web Science](http://dws.informatik.uni-mannheim.de/en/home/) at the University of Mannheim, Germany.
 
 ## Installation
 
@@ -20,8 +22,8 @@ Or install it yourself as:
 
 ## Usage
 
-    > country = TheCountryIdentity::Of.new("Venezuela")
-    => #<TheCountryIdentity::Of:0x007f083417a4d8 @country_name="Venezuela", @url="http://www4.wiwiss.fu-berlin.de/factbook/data/venezuela">
+    > country = TheCountryIdentity::RDF.new("Venezuela")
+    => #<TheCountryIdentity::RDF:0x007f083417a4d8 @country_name="Venezuela", @url="http://www4.wiwiss.fu-berlin.de/factbook/data/venezuela">
 
     > country.population_total
     => 28,047,938
@@ -31,7 +33,7 @@ Or install it yourself as:
 
 ## Roadmap
 
-* Look for others public RDF, sparql or even json endpoints for fetching data.
+* Implement SPARQL method.
 
 ## Contributing
 
