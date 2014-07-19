@@ -1,0 +1,382 @@
+@prefix prv:     <http://purl.org/net/provenance/ns#> .
+@prefix dc:      <http://purl.org/dc/terms/> .
+@prefix db:      <http://wifo5-04.informatik.uni-mannheim.de/factbook/resource/> .
+@prefix sp:      <http://spinrdf.org/sp#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix xhtml:   <http://www.w3.org/1999/xhtml/vocab/#> .
+@prefix void:    <http://rdfs.org/ns/void#> .
+@prefix d2rq:    <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prvTypes:  <http://purl.org/net/provenance/types#> .
+@prefix d2r:     <http://sites.wiwiss.fu-berlin.de/suhl/bizer/d2r-server/config.rdf#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix map:     <file:/var/www/wbsg.de/factbook/factbook.n3#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix factbook:  <http://wifo5-04.informatik.uni-mannheim.de/factbook/ns#> .
+@prefix doap:    <http://usefulinc.com/ns/doap#> .
+
+<http://wifo5-04.informatik.uni-mannheim.de/factbook/data/venezuela>
+      a       foaf:Document , prv:DataItem ;
+      rdfs:label "RDF Description of Venezuela" ;
+      dc:date "2014-07-06T03:24:59.67Z"^^xsd:dateTime ;
+      prv:containedBy <http://wifo5-04.informatik.uni-mannheim.de/factbook/dataset> ;
+      void:inDataset <http://wifo5-04.informatik.uni-mannheim.de/factbook/dataset> ;
+      foaf:primaryTopic db:venezuela .
+
+db:Colombia
+      factbook:landboundary
+              db:venezuela .
+
+db:Guyana
+      factbook:landboundary
+              db:venezuela .
+
+db:Brazil
+      factbook:landboundary
+              db:venezuela .
+
+db:venezuela
+      a       factbook:Country ;
+      rdfs:isDefinedBy <http://wifo5-04.informatik.uni-mannheim.de/factbook/data/venezuela> ;
+      rdfs:label "Venezuela" ;
+      factbook:GDP_compositionbysector_agriculture
+              3.7E0 ;
+      factbook:GDP_compositionbysector_industry
+              41.0E0 ;
+      factbook:GDP_compositionbysector_services
+              55.3E0 ;
+      factbook:GDP_officialexchangerate
+              "147900000000"^^xsd:long ;
+      factbook:GDP_percapita_PPP
+              "6900"^^xsd:long ;
+      factbook:GDP_purchasingpowerparity
+              "176400000000"^^xsd:long ;
+      factbook:GDP_realgrowthrate
+              8.8E0 ;
+      factbook:HIVorAIDS_adultprevalencerate
+              0.7E0 ;
+      factbook:HIVorAIDS_deaths
+              "4100" ;
+      factbook:HIVorAIDS_peoplelivingwithHIVorAIDS
+              "110000"^^xsd:long ;
+      factbook:administrativedivisions
+              "23 states (estados, singular - estado), 1 capital district* (distrito capital), and 1 federal dependency** (dependencia federal); Amazonas, Anzoategui, Apure, Aragua, Barinas, Bolivar, Carabobo, Cojedes, Delta Amacuro, Dependencias Federales**, Distrito Federal*, Falcon, Guarico, Lara, Merida, Miranda, Monagas, Nueva Esparta, Portuguesa, Sucre, Tachira, Trujillo, Vargas, Yaracuy, Zulia" ;
+      factbook:administrativedivisions_note
+              "the federal dependency consists of 11 federally controlled island groups with a total of 72 individual islands" ;
+      factbook:agestructure_0_14years_female
+              "4046170"^^xsd:long ;
+      factbook:agestructure_0_14years_male
+              "4169979"^^xsd:long ;
+      factbook:agestructure_0_14years_percentage
+              31.6E0 ;
+      factbook:agestructure_15_64years_female
+              "8369065"^^xsd:long ;
+      factbook:agestructure_15_64years_male
+              "8120661"^^xsd:long ;
+      factbook:agestructure_15_64years_percentage
+              63.4E0 ;
+      factbook:agestructure_65yearsandover_female
+              "730790"^^xsd:long ;
+      factbook:agestructure_65yearsandover_male
+              "586863"^^xsd:long ;
+      factbook:agestructure_65yearsandover_percentage
+              5.1E0 ;
+      factbook:airports_total
+              "375"^^xsd:long ;
+      factbook:airports_withpavedrunways_total
+              "129" ;
+      factbook:airports_withunpavedrunways_total
+              "246" ;
+      factbook:area_comparative
+              "slightly more than twice the size of California" ;
+      factbook:area_land "882050" ;
+      factbook:area_total "912050" ;
+      factbook:area_water "30000" ;
+      factbook:background "Venezuela was one of three countries that emerged from the collapse of Gran Colombia in 1830 (the others being Ecuador and New Granada, which became Colombia). For most of the first half of the 20th century, Venezuela was ruled by generally benevolent military strongmen, who promoted the oil industry and allowed for some social reforms. Democratically elected governments have held sway since 1959. Hugo CHAVEZ, president since 1999, has promoted a controversial policy of \"democratic socialism,\" which purports to alleviate social ills while at the same time attacking globalization and undermining regional stability. Current concerns include: a weakening of democratic institutions, political polarization, a politicized military, drug-related violence along the Colombian border, increasing internal drug consumption, overdependence on the petroleum industry with its price fluctuations, and irresponsible mining operations that are endangering the rain forest and indigenous peoples." ;
+      factbook:birthrate 21.22E0 ;
+      factbook:budget_expenditures
+              "$52900000000; including capital expenditures of $52900000000" ;
+      factbook:budget_revenues
+              "52240000000"^^xsd:long ;
+      factbook:capital_geographiccoordinates
+              "10 30 N, 66 56 W" ;
+      factbook:capital_name
+              "Caracas" ;
+      factbook:capital_timedifference
+              "UTC-4 (1 hour ahead of Washington, DC during Standard Time)" ;
+      factbook:climate "tropical; hot, humid; more moderate in highlands" ;
+      factbook:coastline_total
+              "2800"^^xsd:long ;
+      factbook:constitution
+              "30 December 1999" ;
+      factbook:countryname_conventionallongform
+              "Bolivarian Republic of Venezuela" ;
+      factbook:countryname_conventionalshortform
+              "Venezuela" ;
+      factbook:countryname_locallongform
+              "Republica Bolivariana de Venezuela" ;
+      factbook:countryname_localshortform
+              "Venezuela" ;
+      factbook:currency_code
+              "bolivar (VEB)" ;
+      factbook:currencycode
+              "VEB" ;
+      factbook:currentaccountbalance
+              "31820000000"^^xsd:long ;
+      factbook:deathrate 5.08E0 ;
+      factbook:debt_external
+              "35630000000" ;
+      factbook:disputes_international
+              "claims all of the area west of the Essequibo River in Guyana, preventing any discussion of a maritime boundary; Guyana has expressed its intention to join Barbados in asserting claims before the United Nations Convention on the Law of the Sea (UNCLOS) that Trinidad and Tobagos maritime boundary with Venezuela extends into their waters; dispute with Colombia over maritime boundary and Venezuelan-administered Los Monjes islands near the Gulf of Venezuela; Colombian-organized illegal narcotics and paramilitary activities penetrate Venezuelas shared border region; in 2006, an estimated 139000 Colombians sought protection in 150 communities along the border in Venezuela; US, France, and the Netherlands recognize Venezuelas granting full effect to Aves Island, thereby claiming a Venezuelan EEZ/continental shelf extending over a large portion of the eastern Caribbean Sea; Dominica, Saint Kitts and Nevis, Saint Lucia, and Saint Vincent and the Grenadines protest Venezuelas full effect claim" ;
+      factbook:distributionoffamilyincome_Giniindex
+              49.1E0 ;
+      factbook:economicaid_recipient
+              "74000000"^^xsd:long ;
+      factbook:economy_overview
+              "Venezuela remains highly dependent on oil revenues, which account for roughly 90% of export earnings, more than 50% of the federal budget revenues, and around 30% of GDP. Tax collection - Venezuelas primary source of non-oil revenue - is expected to surpass $23000000000 in 2006, exceeding the yearend collection goal by more than 20%. A nationwide strike between December 2002 and February 2003 had far-reaching economic consequences - real GDP declined by around 9% in 2002 and 8% in 2003 - but economic output since then has recovered strongly. Fueled by higher oil prices, record government spending helped to boost GDP growth in 2004 and 2005 to approximately 18% and 11%, respectively. Economic growth in 2006 reached about 9%. This spending, combined with recent minimum wage hikes and improved access to domestic credit, has fueled a consumption boom - car sales in 2006 increased by around 70% - but has come at the cost of higher inflation. Despite government attempts to withdraw liquidity from the economy, Venezuelas money supply set a record in June 2006, approximately 70% higher than the previous year. Imports have also jumped significantly." ;
+      factbook:electricity_consumption
+              "86520000000"^^xsd:long ;
+      factbook:electricity_exports
+              "0"^^xsd:long ;
+      factbook:electricity_imports
+              "0"^^xsd:long ;
+      factbook:electricity_production
+              "93030000000"^^xsd:long ;
+      factbook:electricity_productionbysource_fossilfuel
+              31.7E0 ;
+      factbook:electricity_productionbysource_hydro
+              "68"^^xsd:long ;
+      factbook:electricity_productionbysource_nuclear
+              0.0E0 ;
+      factbook:electricity_productionbysource_other
+              0.0E0 ;
+      factbook:elevationextremes_highestpoint
+              "5007"^^xsd:long ;
+      factbook:elevationextremes_highestpoint_place
+              "Pico Bolivar (La Columna)" ;
+      factbook:elevationextremes_lowestpoint
+              "0"^^xsd:long ;
+      factbook:elevationextremes_lowestpoint_place
+              "Caribbean Sea" ;
+      factbook:environment_currentissues
+              "sewage pollution of Lago de Valencia; oil and urban pollution of Lago de Maracaibo; deforestation; soil degradation; urban and industrial pollution, especially along the Caribbean coast; threat to the rainforest ecosystem from irresponsible mining operations" ;
+      factbook:executivebranch_cabinet
+              "Council of Ministers appointed by the president" ;
+      factbook:executivebranch_chiefofstate
+              "President Hugo CHAVEZ Frias (since 3 February 1999); Vice President Jorge RODRIGUEZ Gomez (since 3 January 2007); note - the president is both the chief of state and head of government" ;
+      factbook:executivebranch_electionresults
+              "Hugo CHAVEZ Frias reelected president; percent of vote - Hugo CHAVEZ Frias 62.9%, Manuel ROSALES 36.9%" ;
+      factbook:executivebranch_elections
+              "president elected by popular vote for a six-year term (eligible for a second term); election last held 3 December 2006 (next to be held in December 2012)" ;
+      factbook:executivebranch_headofgovernment
+              "President Hugo CHAVEZ Frias (since 3 February 1999); Vice President Jorge RODRIGUEZ Gomez (since 3 January 2007)" ;
+      factbook:exports "69230000000"^^xsd:long ;
+      factbook:factbookcode
+              "ve" ;
+      factbook:fiscalyear "calendar year" ;
+      factbook:flag <https://www.cia.gov/library/publications/the-world-factbook/flags/ve-flag.gif> ;
+      factbook:flagdescription
+              "three equal horizontal bands of yellow (top), blue, and red with the coat of arms on the hoist side of the yellow band and an arc of eight white five-pointed stars centered in the blue band" ;
+      factbook:geographiccoordinates_latitude
+              8.0E0 ;
+      factbook:geographiccoordinates_longitude
+              66.0E0 ;
+      factbook:governmenttype
+              "federal republic" ;
+      factbook:heliports "1"^^xsd:long ;
+      factbook:householdincomeorconsumptionbypercentageshare_highest10pc
+              36.5E0 ;
+      factbook:householdincomeorconsumptionbypercentageshare_lowest10pc
+              "1"^^xsd:long ;
+      factbook:imports "28810000000"^^xsd:long ;
+      factbook:independence
+              "5 July 1811 (from Spain)" ;
+      factbook:industrialproductiongrowthrate
+              7.0E0 ;
+      factbook:infantmortalityrate_female
+              18.72E0 ;
+      factbook:infantmortalityrate_male
+              26.14E0 ;
+      factbook:infantmortalityrate_total
+              22.52E0 ;
+      factbook:inflationrate_consumerprices
+              15.8E0 ;
+      factbook:internetServiceProviders_ISPs
+              "16"^^xsd:long ;
+      factbook:internetcountrycode
+              ".ve" ;
+      factbook:internethosts
+              "51968" ;
+      factbook:internetusers
+              "3040000" ;
+      factbook:investment_grossfixed
+              "19.8% of GDP" ;
+      factbook:irrigatedland_total
+              "5750" ;
+      factbook:judicialbranch
+              "Supreme Tribunal of Justice or Tribuna Suprema de Justicia (magistrates are elected by the National Assembly for a single 12-year term)" ;
+      factbook:laborforce "12500000"^^xsd:long ;
+      factbook:laborforce_byoccupation_agriculture
+              13.0E0 ;
+      factbook:laborforce_byoccupation_industry
+              23.0E0 ;
+      factbook:laborforce_byoccupation_services
+              64.0E0 ;
+      factbook:landboundary
+              db:Colombia , db:Guyana , db:Brazil ;
+      factbook:landuse_arableland
+              2.85E0 ;
+      factbook:landuse_other
+              96.27E0 ;
+      factbook:landuse_permanentcrops
+              0.88E0 ;
+      factbook:large_flag <https://www.cia.gov/library/publications/the-world-factbook/flags/ve-lgflag.gif> ;
+      factbook:legalsystem
+              "open, adversarial court system" ;
+      factbook:legislativebranch
+              "unicameral National Assembly or Asamblea Nacional (167 seats; members elected by popular vote to serve five-year terms; three seats reserved for the indigenous peoples of Venezuela)" ;
+      factbook:legislativebranch_electionresults
+              "percent of vote by party - NA; seats by party - pro-government 167 (MVR 114, PODEMOS 15, PPT 11, indigenous 2, other 25), opposition 0" ;
+      factbook:legislativebranch_elections
+              "last held 4 December 2005 (next to be held in 2010)" ;
+      factbook:lifeexpectancyatbirth_female
+              "76"^^xsd:long ;
+      factbook:lifeexpectancyatbirth_male
+              70.24E0 ;
+      factbook:lifeexpectancyatbirth_totalpopulation
+              73.28E0 ;
+      factbook:literacy_definition
+              "age 15 and over can read and write" ;
+      factbook:literacy_female
+              "93"^^xsd:long ;
+      factbook:literacy_male
+              "94"^^xsd:long ;
+      factbook:literacy_totalpopulation
+              "93"^^xsd:long ;
+      factbook:location "Northern South America, bordering the Caribbean Sea and the North Atlantic Ocean, between Colombia and Guyana" ;
+      factbook:manpoweravailableformilitaryservice_femalesage18_49
+              "6137622"^^xsd:long ;
+      factbook:manpoweravailableformilitaryservice_malesage18_49
+              "6236012"^^xsd:long ;
+      factbook:manpowerfitformilitaryservice_femalesage18_49
+              "5151843"^^xsd:long ;
+      factbook:manpowerfitformilitaryservice_malesage18_49
+              "4907947"^^xsd:long ;
+      factbook:manpowerreachingmilitaryserviceageannually_femalesage18_49
+              "237300"^^xsd:long ;
+      factbook:manpowerreachingmilitaryserviceageannually_malesage18_49
+              "252396"^^xsd:long ;
+      factbook:map <https://www.cia.gov/library/publications/the-world-factbook/maps/ve-map.gif> ;
+      factbook:maritimeclaims_contiguouszone
+              "15"^^xsd:long ;
+      factbook:maritimeclaims_exclusiveeconomiczone
+              "200" ;
+      factbook:maritimeclaims_territorialsea
+              "12"^^xsd:long ;
+      factbook:medianage_female
+              25.5E0 ;
+      factbook:medianage_male
+              24.3E0 ;
+      factbook:medianage_total
+              "25"^^xsd:long ;
+      factbook:merchantmarine_foreign_owned
+              "13 (Denmark 3, Greece 3, India 1, Mexico 3, Panama 1, Russia 1, Spain 1)" ;
+      factbook:merchantmarine_registeredinothercountries
+              "15 (Bahamas 1, Panama 14)" ;
+      factbook:merchantmarine_total
+              "56"^^xsd:long ;
+      factbook:merchantmarine_total_dwt
+              "1327924"^^xsd:long ;
+      factbook:merchantmarine_total_grt
+              "824941"^^xsd:long ;
+      factbook:militaryexpenditures_dollarfigure
+              "1610000000" ;
+      factbook:militaryexpenditures_percentofGDP
+              2.0E0 ;
+      factbook:militaryserviceageandobligation
+              "18 years of age for compulsory and voluntary military service; conscript service obligation - 30 months" ;
+      factbook:name "Venezuela" ;
+      factbook:nationalholiday
+              "Independence Day, 5 July" ;
+      factbook:nationality_adjective
+              "Venezuelan" ;
+      factbook:nationality_noun
+              "Venezuelan(s)" ;
+      factbook:naturalgas_consumption
+              "27200000000"^^xsd:long ;
+      factbook:naturalgas_exports
+              "0"^^xsd:long ;
+      factbook:naturalgas_imports
+              "0"^^xsd:long ;
+      factbook:naturalgas_production
+              "27200000000"^^xsd:long ;
+      factbook:naturalgas_provedreserves
+              "4276000000000 cu m (1 January 2005 est.)" ;
+      factbook:netmigrationrate
+              -1.28E0 ;
+      factbook:oil_consumption
+              "560000"^^xsd:long ;
+      factbook:oil_exports
+              "2100000"^^xsd:long ;
+      factbook:oil_imports
+              "0"^^xsd:long ;
+      factbook:oil_production
+              "3081000"^^xsd:long ;
+      factbook:oil_provedreserves
+              "75270000000" ;
+      factbook:population_total
+              "26023528"^^xsd:long ;
+      factbook:populationbelowpovertyline
+              37.9E0 ;
+      factbook:populationgrowthrate
+              1.486E0 ;
+      factbook:portsandterminals
+              "Amuay, La Guaira, Maracaibo, Puerto Cabello, Punta Cardon" ;
+      factbook:publicdebt "28.4% of GDP" ;
+      factbook:radiobroadcaststations
+              "AM 201, FM NA (20 in Caracas), shortwave 11" ;
+      factbook:railways_standardgauge
+              "682 km 1.435-m gauge" ;
+      factbook:railways_total
+              "682"^^xsd:long ;
+      factbook:reservesofforeignexchangeandgold
+              "35950000000"^^xsd:long ;
+      factbook:roadways_paved
+              "32308" ;
+      factbook:roadways_total
+              "96155" ;
+      factbook:sexratio_15_64years
+              0.97E0 ;
+      factbook:sexratio_65yearsandover
+              0.803E0 ;
+      factbook:sexratio_atbirth
+              1.05E0 ;
+      factbook:sexratio_totalpopulation
+              0.98E0 ;
+      factbook:sexratio_under15years
+              1.031E0 ;
+      factbook:suffrage "18 years of age; universal" ;
+      factbook:telephones_mainlinesinuse
+              "3605000" ;
+      factbook:telephones_mobilecellular
+              "12496000" ;
+      factbook:telephonesystem_domestic
+              "domestic satellite system with 3 earth stations; recent substantial improvement in telephone service in rural areas; substantial increase in digitalization of exchanges and trunk lines; installation of a national interurban fiber-optic network capable of digital multimedia services" ;
+      factbook:telephonesystem_generalassessment
+              "modern and expanding" ;
+      factbook:telephonesystem_international
+              "country code - 58; 3 submarine coaxial cables; satellite earth stations - 1 Intelsat (Atlantic Ocean) and 1 PanAmSat; participating with Colombia, Ecuador, Peru, and Bolivia in the construction of an international fiber-optic network" ;
+      factbook:televisionbroadcaststations
+              "66 (plus 45 repeaters)" ;
+      factbook:televisions
+              "4100000"^^xsd:long ;
+      factbook:terrain "Andes Mountains and Maracaibo Lowlands in northwest; central plains (llanos); Guiana Highlands in southeast" ;
+      factbook:totalfertilityrate
+              "2.55 children born/woman" ;
+      factbook:unemploymentrate
+              8.9E0 ;
+      factbook:url <https://www.cia.gov/cia/publications/factbook/geos/ve.html> ;
+      foaf:depiction <https://www.cia.gov/library/publications/the-world-factbook/maps/ve-map.gif> ;
+      foaf:logo <https://www.cia.gov/library/publications/the-world-factbook/flags/ve-flag.gif> ;
+      foaf:page <http://wifo5-04.informatik.uni-mannheim.de/factbook/page/venezuela> .
