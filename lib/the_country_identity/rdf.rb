@@ -12,35 +12,34 @@ module TheCountryIdentity
     attr_accessor :data
 
     def initialize(new_country_name)
-      @data ||= {}
-
-      unless new_country_name.nil?
-        @country_name = new_country_name.downcase.gsub(" ", "_").gsub("usa", "united_states")
-        @url = @@URI_PREFIX + @country_name
-
-        begin
-          fetch_rdf
-        rescue => e
-          $log.error("Not able to get country information, through exception: #{e}")
-        end
-
-      end
+      fetch_country new_country_name
     end
 
     def get_property(property_name)
       return @data[property_name] if @data[property_name]
 
-      statement = nil
       unless @repo.nil?
         options = { :predicate => ::RDF::URI("#{@@STATEMENT_PREFIX}#{property_name}") }
         @repo.query(options) do |stmnt|
-          statement = stmnt
+          @data[property_name] = stmnt.object.value
         end
       end
 
-      return statement.object.value.to_f if statement.object.literal?
+      @data[property_name]
+    end
 
-      statement
+    def fetch_country(country_name)
+      @data = {}
+      unless country_name.nil?
+        @country_name = country_name.downcase.gsub(" ", "_").gsub("usa", "united_states")
+        @url = @@URI_PREFIX + @country_name
+
+        begin
+          fetch_rdf
+        rescue => e
+          puts "Not able to get country information, through exception: #{e}"
+        end
+      end
     end
 
     private
