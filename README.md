@@ -1,10 +1,12 @@
 # TheCountryIdentity
 
-[![Build Status](https://travis-ci.org/p1nox/the_country_identity.png?branch=master)](https://travis-ci.org/p1nox/the_country_identity) [![Gem Version](https://badge.fury.io/rb/the_country_identity.png)](http://badge.fury.io/rb/the_country_identity) [![Coverage Status](https://coveralls.io/repos/p1nox/the_country_identity/badge.png)](https://coveralls.io/r/p1nox/the_country_identity)
+[![Gem Version](https://badge.fury.io/rb/the_country_identity.png)](http://badge.fury.io/rb/the_country_identity) [![Build Status](https://travis-ci.org/p1nox/the_country_identity.png?branch=master)](https://travis-ci.org/p1nox/the_country_identity) [![Coverage Status](https://coveralls.io/repos/p1nox/the_country_identity/badge.png)](https://coveralls.io/r/p1nox/the_country_identity)
 
 Introducing __the_country_identity__, a [CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook/) crawler gem, honoring _[The Bourne Series](http://en.wikipedia.org/wiki/Bourne_Series)_.
 
-The source of information is a [RDF Turtle endpoint](http://wifo5-04.informatik.uni-mannheim.de/factbook/all) served by the [D2R Server for the CIA Factbook](http://wifo5-03.informatik.uni-mannheim.de/factbook/) hosted by the [Research Group Data and Web Science](http://dws.informatik.uni-mannheim.de/en/home/) at the University of Mannheim, Germany.
+The source of information is a [RDF Turtle endpoint](http://wifo5-04.informatik.uni-mannheim.de/factbook/all) served from the [D2R Server for the CIA Factbook](http://wifo5-03.informatik.uni-mannheim.de/factbook/) hosted by the [Research Group Data and Web Science](http://dws.informatik.uni-mannheim.de/en/home/) at the University of Mannheim, Germany. In case you get no information from an existing country try [here](http://wifo5-03.informatik.uni-mannheim.de/factbook/data/venezuela) or [here](http://wifo5-04.informatik.uni-mannheim.de/factbook/all) to see if this server is alive.
+
+__This is experimental software, you can use it on production at your own risk.__
 
 ## Installation
 
