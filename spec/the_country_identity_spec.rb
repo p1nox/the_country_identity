@@ -5,7 +5,7 @@ describe TheCountryIdentity do
   describe 'No data fetched for unknown country' do
 
     before do
-      @country = subject::RDF.new("operation_treadstone")
+      @country = subject::RDF.new('operation_treadstone')
     end
 
     it 'creates a new RDF instance' do
@@ -14,12 +14,12 @@ describe TheCountryIdentity do
 
     it 'sets correct country_name' do
       expect(@country.country_name).to be_instance_of(String)
-      expect(@country.country_name).to eq "operation_treadstone"
+      expect(@country.country_name).to eq 'operation_treadstone'
     end
 
     it 'sets correct url' do
       expect(@country.url).to be_instance_of(String)
-      expect(@country.url).to eq "http://wifo5-03.informatik.uni-mannheim.de/factbook/data/operation_treadstone"
+      expect(@country.url).to eq 'http://wifo5-03.informatik.uni-mannheim.de/factbook/data/operation_treadstone'
     end
 
     it 'sets correct repo (RDF::Repository)' do
@@ -41,7 +41,7 @@ describe TheCountryIdentity do
   describe 'Data fetched from remote RDF server for a known country' do
 
     before do
-      @country = subject::RDF.new("venezuela")
+      @country = subject::RDF.new('venezuela')
     end
 
     it 'creates a new RDF instance' do
@@ -50,12 +50,12 @@ describe TheCountryIdentity do
 
     it 'sets correct country_name' do
       expect(@country.country_name).to be_instance_of(String)
-      expect(@country.country_name).to eq "venezuela"
+      expect(@country.country_name).to eq 'venezuela'
     end
 
     it 'sets correct url' do
       expect(@country.url).to be_instance_of(String)
-      expect(@country.url).to eq "http://wifo5-03.informatik.uni-mannheim.de/factbook/data/venezuela"
+      expect(@country.url).to eq 'http://wifo5-03.informatik.uni-mannheim.de/factbook/data/venezuela'
     end
 
     it 'sets correct repo (RDF::Repository)' do
@@ -77,8 +77,8 @@ describe TheCountryIdentity do
       property = 'lifeexpectancyatbirth_totalpopulation'
       life_expectancy = @country.get_property(property)
       expect(life_expectancy).to be_instance_of(String)
-      expect(life_expectancy).to eq "73.28E0"
-      expect(@country.data[property]).to eq "73.28E0"
+      expect(life_expectancy).to eq '73.28E0'
+      expect(@country.data[property]).to eq '73.28E0'
     end
 
     it 'returns nil value for a given unknown property' do

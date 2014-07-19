@@ -3,8 +3,8 @@ module TheCountryIdentity
 
   class RDF
 
-    @@URI_PREFIX       = "http://wifo5-03.informatik.uni-mannheim.de/factbook/data/"
-    @@STATEMENT_PREFIX = "http://wifo5-04.informatik.uni-mannheim.de/factbook/ns#"
+    @@URI_PREFIX       = 'http://wifo5-03.informatik.uni-mannheim.de/factbook/data/'
+    @@STATEMENT_PREFIX = 'http://wifo5-04.informatik.uni-mannheim.de/factbook/ns#'
 
     attr_reader   :country_name
     attr_reader   :url
@@ -31,7 +31,7 @@ module TheCountryIdentity
     def fetch_country(country_name)
       @data = {}
       unless country_name.nil?
-        @country_name = country_name.downcase.gsub(" ", "_").gsub("usa", "united_states")
+        @country_name = country_name.downcase.gsub(' ', '_').gsub('usa', 'united_states')
         @url = @@URI_PREFIX + @country_name
 
         begin
