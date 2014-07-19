@@ -2,9 +2,9 @@
 
 [![Build Status](https://travis-ci.org/p1nox/the_country_identity.png?branch=master)](https://travis-ci.org/p1nox/the_country_identity) [![Gem Version](https://badge.fury.io/rb/the_country_identity.png)](http://badge.fury.io/rb/the_country_identity) [![Coverage Status](https://coveralls.io/repos/p1nox/the_country_identity/badge.png)](https://coveralls.io/r/p1nox/the_country_identity)
 
-Honoring the film "The Bourne Identity", I give you __the_country_identity__, a [CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook/) crawler gem. Based on [semantic_crawler](https://github.com/obale/semantic_crawler).
+Introducing __the_country_identity__, a [CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook/) crawler gem, honoring "The Bourne Series".
 
-The source of information for this gem is the [D2R Server for the CIA Factbook](http://wifo5-03.informatik.uni-mannheim.de/factbook/), hosted by the [Research Group Data and Web Science](http://dws.informatik.uni-mannheim.de/en/home/) at the University of Mannheim, Germany.
+The source of information is a [RDF Turtle endpoint](http://wifo5-04.informatik.uni-mannheim.de/factbook/all) included in the [D2R Server for the CIA Factbook](http://wifo5-03.informatik.uni-mannheim.de/factbook/), hosted by the [Research Group Data and Web Science](http://dws.informatik.uni-mannheim.de/en/home/) at the University of Mannheim, Germany.
 
 ## Installation
 
@@ -33,7 +33,7 @@ Or install it yourself as:
 
 ## Roadmap
 
-* Implement SPARQL method.
+* Implement HTML request approach.
 
 ## Contributing
 
@@ -47,4 +47,4 @@ Or install it yourself as:
 
 © 2012 by [Raul Pino](https://github.com/p1nox) for [Alphadeville](https://github.com/alphadeville), published under MIT license.
 
-_Some portions of this software corresponds to [© 2012 Alex Oberhauser MIT license](https://github.com/obale/semantic_crawler/blob/develop/MIT-LICENSE)_
+_Some portions of this software corresponds to [© 2012 Alex Oberhauser MIT license](https://github.com/obale/semantic_crawler/blob/develop/MIT-LICENSE) in a previous version._

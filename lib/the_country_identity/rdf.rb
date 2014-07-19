@@ -39,6 +39,8 @@ module TheCountryIdentity
       end
 
       return statement.object.value.to_f if statement.object.literal?
+
+      statement
     end
 
     private
