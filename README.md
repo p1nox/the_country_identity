@@ -34,7 +34,7 @@ Or install it yourself as:
     > country.get_property('lifeexpectancyatbirth_totalpopulation')
     => "73.28E0"
 
-  You can find all the country property keys [here](http://wifo5-04.informatik.uni-mannheim.de/factbook/page/venezuela).
+  You can find all the country property keys [here](http://wifo5-04.informatik.uni-mannheim.de/factbook/page/venezuela) and a running example on a rails application [here](https://github.com/alphadeville/mil1-api).
 
 ## Roadmap
 
