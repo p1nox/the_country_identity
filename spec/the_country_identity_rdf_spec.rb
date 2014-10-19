@@ -22,13 +22,14 @@ describe TheCountryIdentity do
       expect(@country.url).to eq 'http://wifo5-03.informatik.uni-mannheim.de/factbook/data/operation_treadstone'
     end
 
-    it 'sets correct repo (RDF::Repository)' do
-      expect(@country.repo).to be_nil
+    it 'sets correct repository (RDF::Repository)' do
+      @country.get_property('lifeexpectancyatbirth_totalpopulation')
+      expect(@country.repository).to be_nil
     end
 
-    it 'sets initial value for cached data' do
-      expect(@country.data).to be_instance_of(Hash)
-      expect(@country.data.empty?).to be_truthy
+    it 'sets initial value to be cached' do
+      expect(@country.cache).to be_instance_of(Hash)
+      expect(@country.cache.empty?).to be_truthy
     end
 
     it 'returns nil value for a given property' do
@@ -58,19 +59,20 @@ describe TheCountryIdentity do
       expect(@country.url).to eq 'http://wifo5-03.informatik.uni-mannheim.de/factbook/data/venezuela'
     end
 
-    it 'sets correct repo (RDF::Repository)' do
-      expect(@country.repo).to be_instance_of(::RDF::Repository)
-      expect(@country.repo.readable?).to be_truthy
-      expect(@country.repo.writable?).to be_truthy
-      expect(@country.repo.persistent?).to be_falsey
-      expect(@country.repo.transient?).to be_truthy
-      expect(@country.repo.empty?).to be_falsey
-      expect(@country.repo.count).to be 197
+    it 'sets correct repository (RDF::Repository)' do
+      @country.get_property('lifeexpectancyatbirth_totalpopulation')
+      expect(@country.repository).to be_instance_of(::RDF::Repository)
+      expect(@country.repository.readable?).to be_truthy
+      expect(@country.repository.writable?).to be_truthy
+      expect(@country.repository.persistent?).to be_falsey
+      expect(@country.repository.transient?).to be_truthy
+      expect(@country.repository.empty?).to be_falsey
+      expect(@country.repository.count).to be 197
     end
 
-    it 'sets initial value for cached data' do
-      expect(@country.data).to be_instance_of(Hash)
-      expect(@country.data.empty?).to be_truthy
+    it 'sets initial value to be cached' do
+      expect(@country.cache).to be_instance_of(Hash)
+      expect(@country.cache.empty?).to be_truthy
     end
 
     it 'returns a custom value for a given property' do
@@ -78,14 +80,14 @@ describe TheCountryIdentity do
       life_expectancy = @country.get_property(property)
       expect(life_expectancy).to be_instance_of(String)
       expect(life_expectancy).to eq '73.28E0'
-      expect(@country.data[property]).to eq '73.28E0'
+      expect(@country.cache[property]).to eq '73.28E0'
     end
 
     it 'returns nil value for a given unknown property' do
       property = 'operation_blackbriar'
       life_expectancy = @country.get_property(property)
       expect(life_expectancy).to be_nil
-      expect(@country.data[property]).to be_nil
+      expect(@country.cache[property]).to be_nil
     end
 
   end

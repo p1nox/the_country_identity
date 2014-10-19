@@ -36,6 +36,8 @@ Or install it yourself as:
 
   You can find all the country property keys [here](http://wifo5-04.informatik.uni-mannheim.de/factbook/page/venezuela) and a running example on a rails application [here](https://github.com/alphadeville/mil1-api).
 
+  * Note: properties will be lazy returned, so a request to the RDF server will be fired only at the first execution of `get_property` method.
+
 ## Roadmap
 
 * Implement HTML request approach.
