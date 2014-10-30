@@ -25,10 +25,9 @@ Or install it yourself as:
 ## Usage
 
     > country = TheCountryIdentity::RDF.new('venezuela')
-    => #<TheCountryIdentity::RDF:0x007faaabaa1c40
+    => #<TheCountryIdentity::RDF:0x007ff9c3350600
+       @cache={},
        @country_name="venezuela",
-       @data={},
-       @repo=#<RDF::Repository:0x3fd555d50c54()>,
        @url="http://wifo5-03.informatik.uni-mannheim.de/factbook/data/venezuela">
 
     > country.get_property('lifeexpectancyatbirth_totalpopulation')
